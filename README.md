@@ -2,7 +2,7 @@
 
 Um WAF robusto para proteção contra ataques web comuns, com dashboard de monitoramento em tempo real.
 
-## 🚀 Novas Funcionalidades
+## 🚀 Funcionalidades
 
 - **Autenticação segura** no dashboard
 - **Persistência de rate limits** entre reinicializações
