@@ -1,0 +1,29 @@
+{
+    "rate_limit": 100,
+    "max_request_size": 1048576,
+    "blocked_ips": [],
+    "sql_patterns": [
+        "(\%27)|(\')|(\-\-)",
+        "((\%3D)|(=))[^\n]*((\%27)|(\')|(\-\-)|(\%3B)|(;))",
+        "\\w*((\%27)|(\'))((\%6F)|o|(\%4F))((\%72)|r|(\%52))",
+        "exec(\\s|\\+)+(s|x)p\\w+"
+    ],
+    "xss_patterns": [
+        "<script.*?>.*?</script>",
+        "javascript:",
+        "onerror\\s*=",
+        "<iframe.*?>",
+        "alert\\(.*?\\)"
+    ],
+    "malicious_user_agents": [
+        "sqlmap", "nmap", "nikto", "metasploit", "wpscan", "havij"
+    ],
+    "lfi_patterns": [
+        "\\.\\./",
+        "\\.\\.\\\\",
+        "etc/passwd",
+        "boot\\.ini"
+    ],
+    "ssl_certfile": "path/to/cert.pem",
+    "ssl_keyfile": "path/to/key.pem"
+}
